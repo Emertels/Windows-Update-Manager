@@ -1,48 +1,37 @@
-# 🌐 Gerenciador do Windows Update 🇧🇷
+# 🔄 Gerenciador do Windows Update 🇧🇷
 
-Fluxo interativo de atualizações cumulativas e importantes do Windows 10/11 usando fontes oficiais.
+<div align="center">
 
-[![Documentação](https://img.shields.io/badge/DOCUMENTA%C3%87%C3%83O-PORTUGU%C3%8AS%20(BRASIL)-green?style=for-the-badge)](README.md) [![Documentation](https://img.shields.io/badge/DOCUMENTATION-ENGLISH-0070F3?style=for-the-badge)](README-EN.md)
+**🌐 Idiomas / Languages:**  
+[![Documentação PT-BR](https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-Portugu%C3%AAs%20(Brasil)-green?style=for-the-badge)](README.md)
+[![Documentation EN](https://img.shields.io/badge/Documentation-English-0070F3?style=for-the-badge)](README-EN.md)
 
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v1.0.0-blue?style=flat-square) ![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=flat-square) ![Plataforma](https://img.shields.io/badge/Plataforma-Windows-0078D4?style=flat-square) ![Idiomas](https://img.shields.io/badge/Idiomas-10%20auto--detectados-2ea44f?style=flat-square)
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v1.0.0-blue?style=for-the-badge)
+![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=for-the-badge)
+![Plataforma](https://img.shields.io/badge/Plataforma-Windows%2010%20%7C%2011-0078D4?style=for-the-badge)
+![Idiomas](https://img.shields.io/badge/Idiomas-10%20Nativos-2ea44f?style=for-the-badge)
 
-[Changelog PT-BR](CHANGELOG-PT-BR.md) · [English changelog](CHANGELOG-EN.md) · [Licença MIT](LICENSE)
+</div>
 
 ---
-## Arquivos
 
-Windows-Update-Manager.ps1 e Session-Header.ps1
+Gerenciador inteligente em PowerShell para auditoria, pesquisa detalhada, download e instalação seletiva de atualizações do Windows Update.
 
-## Como usar
+## 🚀 Principais Recursos
+- **Pesquisa Avançada de Updates:** Localiza KBs cumulativas e atualizações de segurança pendentes.
+- **Instalação Seletiva:** Escolha exatamente quais atualizações aplicar sem forçar reinicializações indesejadas.
+- **Manutenção de Serviços:** Redefinição do serviço de catálogo e limpeza de componentes do repositório WinSxS.
+- **10 Idiomas Nativos:** Detecção automática do sistema com suporte a múltiplos idiomas.
 
-1. Baixe ou clone o repositório completo.
-2. Execute `Windows-Update-Manager.ps1` no Windows PowerShell. Mantenha `Session-Header.ps1` na mesma pasta. Leia cada etapa antes de confirmar downloads ou instalações e aceite o UAC quando solicitado.
+## 📦 Como Usar
+1. Baixe o pacote na seção [Releases](https://github.com/Emertels/Windows-Update-Manager/releases/latest).
+2. Execute `Windows-Update-Manager.ps1` no PowerShell como Administrador.
+3. Utilize o menu interativo para buscar atualizações ou efetuar manutenção.
 
-## Requisitos
+> [!NOTE]
+> Para atualizações que exigem reinicialização, o script informa antecipadamente antes de reiniciar a máquina.
 
-Windows 10 ou Windows 11. Requer Windows PowerShell 5.1; downloads e instalações podem exigir privilégios de administrador. O winget não é necessário.
-
-## Opções e fluxo
-
-**1 — Atualizações cumulativas:** busca esse tipo de atualização do Windows. **2 — Atualizações importantes:** busca os demais pacotes importantes da fonte escolhida. **3 — Ambas. 0 — Sair.** Depois dos downloads, revise a lista e escolha instalar agora ou guardar os arquivos para depois. O utilitário não reinicia o PC automaticamente. Instalações podem exigir administrador e dependem da versão do Windows, das fontes Microsoft e das políticas do dispositivo. Salve seu trabalho antes de instalar.
-
-### Idiomas disponíveis
-
-Detectados pela configuração do Windows; PT-BR é o fallback.
-
-| Idioma | Código | Uso |
-|---|---|
-| Português (Brasil) | pt-BR | Interface PT-BR; também é o idioma alternativo. |
-| Inglês | en | Interface em inglês. |
-| Espanhol | es | Interface em espanhol. |
-| Francês | fr | Interface em francês. |
-| Alemão | de | Interface em alemão. |
-| Italiano | it | Interface em italiano. |
-| Japonês | ja | Interface em japonês. |
-| Coreano | ko | Interface em coreano. |
-| Chinês simplificado | zh-CN | Interface em chinês simplificado. |
-| Russo | ru | Interface em russo. |
-
+---
 ## 👨‍💻 Sobre o Autor
 
 Desenvolvido e mantido por **Emerson Teles** (conhecido na comunidade como **Emertels**).
