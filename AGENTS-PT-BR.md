@@ -1,4 +1,4 @@
-﻿# Instruções para agentes
+# Instruções para agentes
 
 ## Objetivo e identidade
 
@@ -22,7 +22,7 @@
 
 ## Documentação e releases
 
-- Mantenha `README-PT-BR.md` e `README-EN.md` sincronizados, com finalidade, requisitos, uso, dicas, limitações e os dez idiomas.
+- Mantenha `README.md` como documentação principal em PT-BR e `README-EN.md` como versão independente em inglês. Ambos devem explicar finalidade, requisitos, uso, limitações e os dez idiomas sem repetir texto desnecessariamente.
 - Atualize também `AGENTS-PT-BR.md`, `AGENTS-EN.md`, ambos os changelogs e a descrição do projeto quando necessário.
 - Mantenha a licença MIT no repositório.
 - O ZIP de release deve conter somente arquivos necessários para usar o projeto; exclua README, changelog, AGENTS, licença e assets.

@@ -1,12 +1,14 @@
-# Windows Update Manager
-
-**Version:** 1.0.0  
-**Interface languages:** Brazilian Portuguese, English, Spanish, French, German, Italian, Japanese, Korean, Simplified Chinese, and Russian. The interface follows the Windows language and falls back to Brazilian Portuguese when the language is unsupported.
-
-## What it does
+# 🌐 Windows Update Manager
 
 Interactive Windows 10/11 cumulative and important update workflow using Microsoft update sources.
 
+[![Português (Brasil)](https://img.shields.io/badge/DOCUMENTA%C3%87%C3%83O-PORTUGU%C3%8AS%20(BRASIL)-green?style=for-the-badge)](README.md) [![Documentation](https://img.shields.io/badge/DOCUMENTATION-ENGLISH-0070F3?style=for-the-badge)](README-EN.md)
+
+![Version](https://img.shields.io/badge/Version-v1.0.0-blue?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square) ![Languages](https://img.shields.io/badge/Languages-10%20auto--detected-2ea44f?style=flat-square)
+
+[Portuguese changelog](CHANGELOG-PT-BR.md) · [English changelog](CHANGELOG-EN.md) · [MIT License](LICENSE)
+
+---
 ## Files
 
 Windows-Update-Manager.ps1 and Session-Header.ps1
@@ -14,62 +16,62 @@ Windows-Update-Manager.ps1 and Session-Header.ps1
 ## Usage
 
 1. Download or clone the complete repository.
-2. Run `Windows-Update-Manager.ps1 and Session-Header.ps1` in Windows PowerShell. Review each step before confirming downloads or installations, and approve the UAC prompt when requested.
+2. Run `Windows-Update-Manager.ps1` in Windows PowerShell and keep `Session-Header.ps1` in the same folder. Review each step before confirming downloads or installations, and approve the UAC prompt when requested.
 
 ## Requirements
 
 Windows 10 or Windows 11. Windows PowerShell 5.1 is required; downloads and installations may require administrator privileges. winget is not required.
 
-## Safety and limitations
+## Options and workflow
 
-The project must not remove personal data, credentials, or content outside paths defined by the tool. Command and feature availability depends on Windows edition and version. Review CHANGELOG.md before updating.
+**1 — Cumulative updates:** searches for Windows cumulative updates. **2 — Important updates:** searches for other important packages from the chosen source. **3 — Both. 0 — Exit.** After downloads, review the list and choose to install now or keep files for later. The utility does not restart the PC automatically. Installation may require administrator rights and depends on Windows version, Microsoft sources, and device policies. Save your work first.
 
-## Development
+### Available languages
 
-See AGENTS-PT-BR.md and AGENTS-EN.md. The default interface language follows Windows UI culture; Brazilian Portuguese is the fallback.
+Detected from Windows settings; Brazilian Portuguese is the fallback.
 
-## Languages, purpose, and tips
+| Language | Locale | Typical system |
+|---|---|
+| Brazilian Portuguese | pt-BR | Brazilian Windows; also the fallback language. |
+| English | en | English Windows. |
+| Spanish | es | Spanish Windows. |
+| French | fr | French Windows. |
+| German | de | German Windows. |
+| Italian | it | Italian Windows. |
+| Japanese | ja | Japanese Windows. |
+| Korean | ko | Korean Windows. |
+| Simplified Chinese | zh-CN | Simplified Chinese Windows. |
+| Russian | ru | Russian Windows. |
 
-Menus, stages, warnings, summaries, and download/installation messages are available in all ten languages. Tip: allow packages to finish downloading, review the final summary, then choose whether to install now or keep them for later. The tool does not restart the computer automatically.
+## 👨‍💻 About the Author
 
-Save your work and consider creating a restore point before resetting components. Organization policies and Windows version may limit actions.
+Developed and maintained by **Emerson Teles** (known in the community as **Emertels**).
 
-### Idiomas disponíveis / Available languages
+Technology, computing, gaming, system maintenance, and software translation/localization enthusiast. Focused on practical utilities, productivity tools, intelligent PowerShell automation, and technical localization solutions that make modern tools more accessible to Brazilian users.
 
-| Language | Locale | Used for |
-|---|---|---|
-| Brazilian Portuguese | pt-BR | Brazilian Windows; fallback for unsupported locales |
-| English | en | English Windows |
-| Spanish | es | Spanish Windows |
-| French | fr | French Windows |
-| German | de | German Windows |
-| Italian | it | Italian Windows |
-| Japanese | ja | Japanese Windows |
-| Korean | ko | Korean Windows |
-| Simplified Chinese | zh-CN | Simplified Chinese Windows |
-| Russian | ru | Russian Windows |
+### 🛠️ Projects & Contributions
 
+- [AI-Chat-Vault](https://github.com/Emertels/AI-Chat-Vault) — Portable backup and recovery for local conversations from 20+ AI tools and assistants.
+- [Antigravity — Brazilian Portuguese Translation](https://github.com/Emertels/Antigravity-Traducao-PTBR) — Complete localization of Google Antigravity Desktop into Brazilian Portuguese.
+- [Codex Router — Brazilian Portuguese Translation](https://github.com/Emertels/CodexRouter-Traducao-PTBR) — Translation and localization package for Codex Router Control Center.
+- [Cursor AI — Brazilian Portuguese Translation](https://github.com/Emertels/Cursor-Traducao-PTBR) — Complete, in-depth localization of Cursor AI into Brazilian Portuguese.
+- [GPU Tweak III — Brazilian Portuguese Translation](https://github.com/Emertels/GPU-Tweak-III-Traducao-PTBR) — Brazilian Portuguese translation and automated installer for ASUS GPU Tweak III.
+- [Microsoft Photos Fix](https://github.com/Emertels/Microsoft-Photos-Fix) — PowerShell and C# fix for startup routing and image viewing in Windows Photos.
+- [PSBBN-Translator](https://github.com/Emertels/PSBBN-Translator) — Localization suite for the PSBBN Definitive Project (PlayStation 2) in 40 languages.
+- [Silent Hill: Homecoming — Brazilian Portuguese Translation](https://github.com/Emertels/Silent-Hill-Homecoming-Traducao-PTBR) — Complete PC translation and review into Brazilian Portuguese.
+- [Suite-Emuladores](https://github.com/Emertels/Suite-Emuladores) — PowerShell suite for downloading and updating 56 emulators and frontends on Windows.
+- [ZCode — Brazilian Portuguese Translation](https://github.com/Emertels/ZCode-Traducao-PTBR) — Complete localization of ZCode Desktop into Brazilian Portuguese.
 
+### 🌐 Connect with me & Official Communities
 
+<div align="left">
 
+[![GitHub](https://img.shields.io/badge/GitHub-Emertels-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/emertels)
+[![Website](https://img.shields.io/badge/Website-Emerson_Teles-0070F3?style=for-the-badge&logo=googlechrome&logoColor=white)](https://emertels.github.io)
+[![Discord](https://img.shields.io/badge/Discord-Emertels%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://emertels.github.io/discord)
+[![X / Twitter](https://img.shields.io/badge/X_Twitter-@emertels-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/emertels)
+[![YouTube](https://img.shields.io/badge/YouTube-Emerson_Teles-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@emersonteles2379)
+[![Telegram](https://img.shields.io/badge/Telegram-Aplicativos%20Mods-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/apksmodsandroid)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support_the_Project-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/emertels)
 
-
-
-## About Emerson Teles
-
-Emerson Teles (Emertels) builds Windows tools for automation, emulation, and software localization. Explore his projects and official channels:
-
-- [Official website](https://emertels.github.io) · [GitHub](https://github.com/Emertels) · [Discord](https://emertels.github.io/discord)
-- [YouTube](https://www.youtube.com/@emersonteles2379) · [X](https://x.com/emertels) · [Telegram](https://t.me/apksmodsandroid) · [Ko-fi](https://ko-fi.com/emertels)
-
-### Other projects
-
-- [AI-Chat-Vault](https://github.com/Emertels/AI-Chat-Vault) — portable backup and recovery for local AI assistant conversations.
-- [Suite-Emuladores](https://github.com/Emertels/Suite-Emuladores) — Windows download and update management for emulators and frontends.
-- [Microsoft-Photos-Fix](https://github.com/Emertels/Microsoft-Photos-Fix) — startup and wallpaper fixes for the Windows Photos app.
-- [PSBBN-Translator](https://github.com/Emertels/PSBBN-Translator) — localization of the PSBBN Definitive Project into 40 languages.
-- [GPU-Tweak-III-Traducao-PTBR](https://github.com/Emertels/GPU-Tweak-III-Traducao-PTBR), [Cursor-Traducao-PTBR](https://github.com/Emertels/Cursor-Traducao-PTBR), [CodexRouter-Traducao-PTBR](https://github.com/Emertels/CodexRouter-Traducao-PTBR), [Antigravity-Traducao-PTBR](https://github.com/Emertels/Antigravity-Traducao-PTBR), and [ZCode-Traducao-PTBR](https://github.com/Emertels/ZCode-Traducao-PTBR) — Brazilian Portuguese localization projects.
-- [Silent-Hill-Homecoming-Traducao-PTBR](https://github.com/Emertels/Silent-Hill-Homecoming-Traducao-PTBR) — PC translation and review project.
-
-
-
+</div>

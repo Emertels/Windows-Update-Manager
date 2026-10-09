@@ -2,6 +2,8 @@
 
 ## 1.0.0 — 2026-10-09
 
+- Reorganiza a documentação: README principal em PT-BR, versão independente em inglês e instruções específicas das opções/etapas deste projeto.
+
 - Completa a localização de etapas, estados, mensagens de erro, resumos e informações variáveis nos dez idiomas.
 - Mantém os nomes reais dos parâmetros do PowerShell nas mensagens traduzidas para que os comandos de recuperação continuem corretos.
 
@@ -16,3 +18,4 @@
 
 - A documentação de uso, dependências e arquivos necessários foi revisada para corresponder ao comportamento atual do projeto.
 
+- Padroniza a seção do autor, projetos e comunidades oficiais conforme o repositório de referência Antigravity.

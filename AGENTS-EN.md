@@ -1,4 +1,4 @@
-﻿# Agent instructions
+# Agent instructions
 
 ## Purpose and project identity
 
@@ -22,7 +22,7 @@
 
 ## Documentation and releases
 
-- Keep `README-PT-BR.md` and `README-EN.md` synchronized, documenting purpose, requirements, usage, tips, limitations, and all ten languages.
+- Keep `README.md` as the primary PT-BR documentation and `README-EN.md` as its separate English counterpart. Both should explain purpose, requirements, usage, limitations, and all ten languages without unnecessary repetition.
 - Also update `AGENTS-PT-BR.md`, `AGENTS-EN.md`, both changelogs, and the project description when needed.
 - Keep the MIT license in the repository.
 - A release ZIP must contain only files needed to use the project; exclude README, changelog, AGENTS, license, and assets.

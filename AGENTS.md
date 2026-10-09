@@ -1,4 +1,4 @@
-﻿# Agentes / Agents
+# Agentes / Agents
 
 Leia as instruções no idioma preferido:
 - [Português (Brasil)](AGENTS-PT-BR.md)
