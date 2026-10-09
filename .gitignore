@@ -1,0 +1,10 @@
+# Local diagnostics, logs, backups, and temporary files
+*.log
+*.tmp
+*.bak
+*.reg
+__pycache__/
+*.py[cod]
+
+# Release archives are attached to GitHub Releases, not committed
+*.zip
