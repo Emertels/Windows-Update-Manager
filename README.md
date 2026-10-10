@@ -32,6 +32,42 @@ Gerenciador inteligente em PowerShell para auditoria, pesquisa detalhada, downlo
 > Para atualizações que exigem reinicialização, o script informa antecipadamente antes de reiniciar a máquina.
 
 ---
+## 🌐 Suporte Multilíngue (10 Idiomas Nativos)
+
+A ferramenta possui suporte completo e integrado a **10 idiomas**, detectando automaticamente a cultura de idioma configurada no seu sistema operacional Windows:
+
+| Idioma | Código | Detecção |
+| :--- | :--- | :--- |
+| 🇧🇷 **Português (Brasil)** | `pt-BR` | Padrão / Automático |
+| 🇺🇸 **English** | `en` | Automático |
+| 🇪🇸 **Español** | `es` | Automático |
+| 🇫🇷 **Français** | `fr` | Automático |
+| 🇩🇪 **Deutsch** | `de` | Automático |
+| 🇮🇹 **Italiano** | `it` | Automático |
+| 🇯🇵 **日本語 (Japonês)** | `ja` | Automático |
+| 🇰🇷 **한국어 (Coreano)** | `ko` | Automático |
+| 🇨🇳 **简体中文 (Chinês Simplificado)** | `zh-CN` | Automático |
+| 🇷🇺 **Русский (Russo)** | `ru` | Automático |
+
+### 💡 Como Alternar ou Forçar o Idioma
+Caso deseje rodar a ferramenta em um idioma diferente daquele definido no seu Windows, basta configurar a variável de ambiente `EMERTELS_LANGUAGE`:
+
+**No Prompt de Comando (CMD / Batch):**
+```cmd
+set EMERTELS_LANGUAGE=en
+powershell -ExecutionPolicy Bypass -File Windows-Update-Manager.ps1
+```
+
+**No PowerShell:**
+```powershell
+$env:EMERTELS_LANGUAGE = "en"
+.\Windows-Update-Manager.ps1
+```
+
+> [!TIP]
+> Se o idioma do sistema não estiver na lista dos 10 suportados, a ferramenta utiliza com segurança o fallback em **Português (Brasil)** ou **English**.
+
+---
 ## 👨‍💻 Sobre o Autor
 
 Desenvolvido e mantido por **Emerson Teles** (conhecido na comunidade como **Emertels**).
